@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OthelloPresentation
 {
-    internal class GameManager
+    public class GameManager
     {
     }
 }

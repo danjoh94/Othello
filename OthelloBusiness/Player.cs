@@ -1,7 +1,11 @@
 ﻿namespace OthelloBusiness
 {
-    public class Class1
+    public abstract class Player
     {
+        public string Name { get; set; }
 
+        public int Disk { get; set; }
+
+        public abstract void RequestMove();
     }
 }

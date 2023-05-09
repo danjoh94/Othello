@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace OthelloBusiness
 {
-    public class ComputerPlayer
+    public class ComputerPlayer : Player
     {
+        public override void RequestMove()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
