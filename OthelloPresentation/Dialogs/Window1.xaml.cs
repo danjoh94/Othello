@@ -12,17 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace OthelloPresentation
+namespace OthelloPresentation.Dialogs
 {
     /// <summary>
-    /// Interaction logic for WinnerDialog.xaml
+    /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class WinnerDialog : Window
+    public partial class Window1 : Window
     {
-        public WinnerDialog(string winner_name)
+        public Window1()
         {
             InitializeComponent();
-            lblWinner.Text = $"Player {winner_name} won";
         }
     }
 }

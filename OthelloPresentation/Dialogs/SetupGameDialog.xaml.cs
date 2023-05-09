@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace OthelloPresentation
+namespace OthelloPresentation.Dialogs
 {
     /// <summary>
-    /// Interaction logic for DrawnDialog.xaml
+    /// Interaction logic for SetupGameDialog.xaml
     /// </summary>
-    public partial class DrawnDialog : Window
+    public partial class SetupGameDialog : Window
     {
-        public DrawnDialog()
+        public SetupGameDialog()
         {
             InitializeComponent();
         }
