@@ -5,215 +5,347 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:OthelloPresentation"
              mc:Ignorable="d" 
-             d:DesignHeight="250" d:DesignWidth="250" Background="#FF028A0F">
+             d:DesignHeight="250" d:DesignWidth="250" >
     <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <!--#region Grid Labels-->
-        <TextBlock Text="1" Grid.Column="0" Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="2" Grid.Column="0" Grid.Row="2" TextAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="3" Grid.Column="0" Grid.Row="3" TextAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="4" Grid.Column="0" Grid.Row="4" TextAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="5" Grid.Column="0" Grid.Row="5" TextAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="6" Grid.Column="0" Grid.Row="6" TextAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="7" Grid.Column="0" Grid.Row="7" TextAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="8" Grid.Column="0" Grid.Row="8" TextAlignment="Center" VerticalAlignment="Center"/>
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="1" Grid.Row="0" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+            <TextBlock Text="2" Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+            <TextBlock Text="3" Grid.Row="2" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+            <TextBlock Text="4" Grid.Row="3" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+            <TextBlock Text="5" Grid.Row="4" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+            <TextBlock Text="6" Grid.Row="5" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+            <TextBlock Text="7" Grid.Row="6" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+            <TextBlock Text="8" Grid.Row="7" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
 
-        <TextBlock Text="a" Grid.Column="1" Grid.Row="0" TextAlignment="Center"/>
-        <TextBlock Text="b" Grid.Column="2" Grid.Row="0" TextAlignment="Center"/>
-        <TextBlock Text="c" Grid.Column="3" Grid.Row="0" TextAlignment="Center"/>
-        <TextBlock Text="d" Grid.Column="4" Grid.Row="0" TextAlignment="Center"/>
-        <TextBlock Text="e" Grid.Column="5" Grid.Row="0" TextAlignment="Center"/>
-        <TextBlock Text="f" Grid.Column="6" Grid.Row="0" TextAlignment="Center"/>
-        <TextBlock Text="g" Grid.Column="7" Grid.Row="0" TextAlignment="Center"/>
-        <TextBlock Text="h" Grid.Column="8" Grid.Row="0" TextAlignment="Center"/>
 
-        <TextBlock Text="1" Grid.Column="9" Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="2" Grid.Column="9" Grid.Row="2" TextAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="3" Grid.Column="9" Grid.Row="3" TextAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="4" Grid.Column="9" Grid.Row="4" TextAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="5" Grid.Column="9" Grid.Row="5" TextAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="6" Grid.Column="9" Grid.Row="6" TextAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="7" Grid.Column="9" Grid.Row="7" TextAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="8" Grid.Column="9" Grid.Row="8" TextAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="a" Grid.Column="0" TextAlignment="Center" Padding = "5"/>
+            <TextBlock Text="b" Grid.Column="1" TextAlignment="Center" Padding = "5"/>
+            <TextBlock Text="c" Grid.Column="2" TextAlignment="Center" Padding = "5"/>
+            <TextBlock Text="d" Grid.Column="3" TextAlignment="Center" Padding = "5"/>
+            <TextBlock Text="e" Grid.Column="4" TextAlignment="Center" Padding = "5"/>
+            <TextBlock Text="f" Grid.Column="5" TextAlignment="Center" Padding = "5"/>
+            <TextBlock Text="g" Grid.Column="6" TextAlignment="Center" Padding = "5"/>
+            <TextBlock Text="h" Grid.Column="7" TextAlignment="Center" Padding = "5"/>
+        </Grid>
+        <Grid Grid.Column="3" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-        <TextBlock Text="a" Grid.Column="1" Grid.Row="9" TextAlignment="Center"/>
-        <TextBlock Text="b" Grid.Column="2" Grid.Row="9" TextAlignment="Center"/>
-        <TextBlock Text="c" Grid.Column="3" Grid.Row="9" TextAlignment="Center"/>
-        <TextBlock Text="d" Grid.Column="4" Grid.Row="9" TextAlignment="Center"/>
-        <TextBlock Text="e" Grid.Column="5" Grid.Row="9" TextAlignment="Center"/>
-        <TextBlock Text="f" Grid.Column="6" Grid.Row="9" TextAlignment="Center"/>
-        <TextBlock Text="g" Grid.Column="7" Grid.Row="9" TextAlignment="Center"/>
-        <TextBlock Text="h" Grid.Column="8" Grid.Row="9" TextAlignment="Center"/>
-        <!--#endregion-->
-        <!--#region Game Grid-->
-        <!--#region Row 1-->
-        <Rectangle Grid.Column="1" Grid.Row="1" Stroke="Black"/>
-        <Rectangle Grid.Column="2" Grid.Row="1" Stroke="Black"/>
-        <Rectangle Grid.Column="3" Grid.Row="1" Stroke="Black"/>
-        <Rectangle Grid.Column="4" Grid.Row="1" Stroke="Black"/>
-        <Rectangle Grid.Column="5" Grid.Row="1" Stroke="Black"/>
-        <Rectangle Grid.Column="6" Grid.Row="1" Stroke="Black"/>
-        <Rectangle Grid.Column="7" Grid.Row="1" Stroke="Black"/>
-        <Rectangle Grid.Column="8" Grid.Row="1" Stroke="Black"/>
-        <Ellipse Grid.Column="1" Grid.Row="1" Fill="{Binding GameGrid[0][0]}"/>
-        <Ellipse Grid.Column="2" Grid.Row="1" Fill="{Binding GameGrid[0][1]}"/>
-        <Ellipse Grid.Column="3" Grid.Row="1" Fill="{Binding GameGrid[0][2]}"/>
-        <Ellipse Grid.Column="4" Grid.Row="1" Fill="{Binding GameGrid[0][3]}"/>
-        <Ellipse Grid.Column="5" Grid.Row="1" Fill="{Binding GameGrid[0][4]}"/>
-        <Ellipse Grid.Column="6" Grid.Row="1" Fill="{Binding GameGrid[0][5]}"/>
-        <Ellipse Grid.Column="7" Grid.Row="1" Fill="{Binding GameGrid[0][6]}"/>
-        <Ellipse Grid.Column="8" Grid.Row="1" Fill="{Binding GameGrid[0][7]}"/>
-        <!--#endregion-->
-        <!--#region Row 2-->
-        <Rectangle Grid.Column="1" Grid.Row="2" Stroke="Black"/>
-        <Rectangle Grid.Column="2" Grid.Row="2" Stroke="Black"/>
-        <Rectangle Grid.Column="3" Grid.Row="2" Stroke="Black"/>
-        <Rectangle Grid.Column="4" Grid.Row="2" Stroke="Black"/>
-        <Rectangle Grid.Column="5" Grid.Row="2" Stroke="Black"/>
-        <Rectangle Grid.Column="6" Grid.Row="2" Stroke="Black"/>
-        <Rectangle Grid.Column="7" Grid.Row="2" Stroke="Black"/>
-        <Rectangle Grid.Column="8" Grid.Row="2" Stroke="Black"/>
-        <Ellipse Grid.Column="1" Grid.Row="2" Fill="{Binding GameGrid[1][0]}"/>
-        <Ellipse Grid.Column="2" Grid.Row="2" Fill="{Binding GameGrid[1][1]}"/>
-        <Ellipse Grid.Column="3" Grid.Row="2" Fill="{Binding GameGrid[1][2]}"/>
-        <Ellipse Grid.Column="4" Grid.Row="2" Fill="{Binding GameGrid[1][3]}"/>
-        <Ellipse Grid.Column="5" Grid.Row="2" Fill="{Binding GameGrid[1][4]}"/>
-        <Ellipse Grid.Column="6" Grid.Row="2" Fill="{Binding GameGrid[1][5]}"/>
-        <Ellipse Grid.Column="7" Grid.Row="2" Fill="{Binding GameGrid[1][6]}"/>
-        <Ellipse Grid.Column="8" Grid.Row="2" Fill="{Binding GameGrid[1][7]}"/>
-        <!--#endregion-->
-        <!--#region Row 3-->
-        <Rectangle Grid.Column="1" Grid.Row="3" Stroke="Black"/>
-        <Rectangle Grid.Column="2" Grid.Row="3" Stroke="Black"/>
-        <Rectangle Grid.Column="3" Grid.Row="3" Stroke="Black"/>
-        <Rectangle Grid.Column="4" Grid.Row="3" Stroke="Black"/>
-        <Rectangle Grid.Column="5" Grid.Row="3" Stroke="Black"/>
-        <Rectangle Grid.Column="6" Grid.Row="3" Stroke="Black"/>
-        <Rectangle Grid.Column="7" Grid.Row="3" Stroke="Black"/>
-        <Rectangle Grid.Column="8" Grid.Row="3" Stroke="Black"/>
-        <Ellipse Grid.Column="1" Grid.Row="3" Fill="{Binding GameGrid[2][0]}"/>
-        <Ellipse Grid.Column="2" Grid.Row="3" Fill="{Binding GameGrid[2][1]}"/>
-        <Ellipse Grid.Column="3" Grid.Row="3" Fill="{Binding GameGrid[2][2]}"/>
-        <Ellipse Grid.Column="4" Grid.Row="3" Fill="{Binding GameGrid[2][3]}"/>
-        <Ellipse Grid.Column="5" Grid.Row="3" Fill="{Binding GameGrid[2][4]}"/>
-        <Ellipse Grid.Column="6" Grid.Row="3" Fill="{Binding GameGrid[2][5]}"/>
-        <Ellipse Grid.Column="7" Grid.Row="3" Fill="{Binding GameGrid[2][6]}"/>
-        <Ellipse Grid.Column="8" Grid.Row="3" Fill="{Binding GameGrid[2][7]}"/>
-        <!--#endregion-->
-        <!--#region Row 4-->
-        <Rectangle Grid.Column="1" Grid.Row="4" Stroke="Black"/>
-        <Rectangle Grid.Column="2" Grid.Row="4" Stroke="Black"/>
-        <Rectangle Grid.Column="3" Grid.Row="4" Stroke="Black"/>
-        <Rectangle Grid.Column="4" Grid.Row="4" Stroke="Black"/>
-        <Rectangle Grid.Column="5" Grid.Row="4" Stroke="Black"/>
-        <Rectangle Grid.Column="6" Grid.Row="4" Stroke="Black"/>
-        <Rectangle Grid.Column="7" Grid.Row="4" Stroke="Black"/>
-        <Rectangle Grid.Column="8" Grid.Row="4" Stroke="Black"/>
-        <Ellipse Grid.Column="1" Grid.Row="4" Fill="{Binding GameGrid[3][0]}"/>
-        <Ellipse Grid.Column="2" Grid.Row="4" Fill="{Binding GameGrid[3][1]}"/>
-        <Ellipse Grid.Column="3" Grid.Row="4" Fill="{Binding GameGrid[3][2]}"/>
-        <Ellipse Grid.Column="4" Grid.Row="4" Fill="{Binding GameGrid[3][3]}"/>
-        <Ellipse Grid.Column="5" Grid.Row="4" Fill="{Binding GameGrid[3][4]}"/>
-        <Ellipse Grid.Column="6" Grid.Row="4" Fill="{Binding GameGrid[3][5]}"/>
-        <Ellipse Grid.Column="7" Grid.Row="4" Fill="{Binding GameGrid[3][6]}"/>
-        <Ellipse Grid.Column="8" Grid.Row="4" Fill="{Binding GameGrid[3][7]}"/>
-        <!--#endregion-->
-        <!--#region Row 5-->
-        <Rectangle Grid.Column="1" Grid.Row="5" Stroke="Black"/>
-        <Rectangle Grid.Column="2" Grid.Row="5" Stroke="Black"/>
-        <Rectangle Grid.Column="3" Grid.Row="5" Stroke="Black"/>
-        <Rectangle Grid.Column="4" Grid.Row="5" Stroke="Black"/>
-        <Rectangle Grid.Column="5" Grid.Row="5" Stroke="Black"/>
-        <Rectangle Grid.Column="6" Grid.Row="5" Stroke="Black"/>
-        <Rectangle Grid.Column="7" Grid.Row="5" Stroke="Black"/>
-        <Rectangle Grid.Column="8" Grid.Row="5" Stroke="Black"/>
-        <Ellipse Grid.Column="1" Grid.Row="5" Fill="{Binding GameGrid[4][0]}"/>
-        <Ellipse Grid.Column="2" Grid.Row="5" Fill="{Binding GameGrid[4][1]}"/>
-        <Ellipse Grid.Column="3" Grid.Row="5" Fill="{Binding GameGrid[4][2]}"/>
-        <Ellipse Grid.Column="4" Grid.Row="5" Fill="{Binding GameGrid[4][3]}"/>
-        <Ellipse Grid.Column="5" Grid.Row="5" Fill="{Binding GameGrid[4][4]}"/>
-        <Ellipse Grid.Column="6" Grid.Row="5" Fill="{Binding GameGrid[4][5]}"/>
-        <Ellipse Grid.Column="7" Grid.Row="5" Fill="{Binding GameGrid[4][6]}"/>
-        <Ellipse Grid.Column="8" Grid.Row="5" Fill="{Binding GameGrid[4][7]}"/>
-        <!--#endregion-->
-        <!--#region Row 6-->
-        <Rectangle Grid.Column="1" Grid.Row="6" Stroke="Black"/>
-        <Rectangle Grid.Column="2" Grid.Row="6" Stroke="Black"/>
-        <Rectangle Grid.Column="3" Grid.Row="6" Stroke="Black"/>
-        <Rectangle Grid.Column="4" Grid.Row="6" Stroke="Black"/>
-        <Rectangle Grid.Column="5" Grid.Row="6" Stroke="Black"/>
-        <Rectangle Grid.Column="6" Grid.Row="6" Stroke="Black"/>
-        <Rectangle Grid.Column="7" Grid.Row="6" Stroke="Black"/>
-        <Rectangle Grid.Column="8" Grid.Row="6" Stroke="Black"/>
-        <Ellipse Grid.Column="1" Grid.Row="6" Fill="{Binding GameGrid[5][0]}"/>
-        <Ellipse Grid.Column="2" Grid.Row="6" Fill="{Binding GameGrid[5][1]}"/>
-        <Ellipse Grid.Column="3" Grid.Row="6" Fill="{Binding GameGrid[5][2]}"/>
-        <Ellipse Grid.Column="4" Grid.Row="6" Fill="{Binding GameGrid[5][3]}"/>
-        <Ellipse Grid.Column="5" Grid.Row="6" Fill="{Binding GameGrid[5][4]}"/>
-        <Ellipse Grid.Column="6" Grid.Row="6" Fill="{Binding GameGrid[5][5]}"/>
-        <Ellipse Grid.Column="7" Grid.Row="6" Fill="{Binding GameGrid[5][6]}"/>
-        <Ellipse Grid.Column="8" Grid.Row="6" Fill="{Binding GameGrid[5][7]}"/>
-        <!--#endregion-->
-        <!--#region Row 7-->
-        <Rectangle Grid.Column="1" Grid.Row="7" Stroke="Black"/>
-        <Rectangle Grid.Column="2" Grid.Row="7" Stroke="Black"/>
-        <Rectangle Grid.Column="3" Grid.Row="7" Stroke="Black"/>
-        <Rectangle Grid.Column="4" Grid.Row="7" Stroke="Black"/>
-        <Rectangle Grid.Column="5" Grid.Row="7" Stroke="Black"/>
-        <Rectangle Grid.Column="6" Grid.Row="7" Stroke="Black"/>
-        <Rectangle Grid.Column="7" Grid.Row="7" Stroke="Black"/>
-        <Rectangle Grid.Column="8" Grid.Row="7" Stroke="Black"/>
-        <Ellipse Grid.Column="1" Grid.Row="7" Fill="{Binding GameGrid[6][0]}"/>
-        <Ellipse Grid.Column="2" Grid.Row="7" Fill="{Binding GameGrid[6][1]}"/>
-        <Ellipse Grid.Column="3" Grid.Row="7" Fill="{Binding GameGrid[6][2]}"/>
-        <Ellipse Grid.Column="4" Grid.Row="7" Fill="{Binding GameGrid[6][3]}"/>
-        <Ellipse Grid.Column="5" Grid.Row="7" Fill="{Binding GameGrid[6][4]}"/>
-        <Ellipse Grid.Column="6" Grid.Row="7" Fill="{Binding GameGrid[6][5]}"/>
-        <Ellipse Grid.Column="7" Grid.Row="7" Fill="{Binding GameGrid[6][6]}"/>
-        <Ellipse Grid.Column="8" Grid.Row="7" Fill="{Binding GameGrid[6][7]}"/>
-        <!--#endregion-->
-        <!--#region Row 8-->
-        <Rectangle Grid.Column="1" Grid.Row="8" Stroke="Black"/>
-        <Rectangle Grid.Column="2" Grid.Row="8" Stroke="Black"/>
-        <Rectangle Grid.Column="3" Grid.Row="8" Stroke="Black"/>
-        <Rectangle Grid.Column="4" Grid.Row="8" Stroke="Black"/>
-        <Rectangle Grid.Column="5" Grid.Row="8" Stroke="Black"/>
-        <Rectangle Grid.Column="6" Grid.Row="8" Stroke="Black"/>
-        <Rectangle Grid.Column="7" Grid.Row="8" Stroke="Black"/>
-        <Rectangle Grid.Column="8" Grid.Row="8" Stroke="Black"/>
-        <Ellipse Grid.Column="1" Grid.Row="8" Fill="{Binding GameGrid[7][0]}"/>
-        <Ellipse Grid.Column="2" Grid.Row="8" Fill="{Binding GameGrid[7][1]}"/>
-        <Ellipse Grid.Column="3" Grid.Row="8" Fill="{Binding GameGrid[7][2]}"/>
-        <Ellipse Grid.Column="4" Grid.Row="8" Fill="{Binding GameGrid[7][3]}"/>
-        <Ellipse Grid.Column="5" Grid.Row="8" Fill="{Binding GameGrid[7][4]}"/>
-        <Ellipse Grid.Column="6" Grid.Row="8" Fill="{Binding GameGrid[7][5]}"/>
-        <Ellipse Grid.Column="7" Grid.Row="8" Fill="{Binding GameGrid[7][6]}"/>
-        <Ellipse Grid.Column="8" Grid.Row="8" Fill="{Binding GameGrid[7][7]}"/>
+            <TextBlock Text="1" Grid.Row="0" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+            <TextBlock Text="2" Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+            <TextBlock Text="3" Grid.Row="2" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+            <TextBlock Text="4" Grid.Row="3" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+            <TextBlock Text="5" Grid.Row="4" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+            <TextBlock Text="6" Grid.Row="5" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+            <TextBlock Text="7" Grid.Row="6" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+            <TextBlock Text="8" Grid.Row="7" TextAlignment="Center" VerticalAlignment="Center" Padding = "5"/>
+
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="a" Grid.Column="0" TextAlignment="Center" Padding = "5"/>
+            <TextBlock Text="b" Grid.Column="1" TextAlignment="Center" Padding = "5"/>
+            <TextBlock Text="c" Grid.Column="2" TextAlignment="Center" Padding = "5"/>
+            <TextBlock Text="d" Grid.Column="3" TextAlignment="Center" Padding = "5"/>
+            <TextBlock Text="e" Grid.Column="4" TextAlignment="Center" Padding = "5"/>
+            <TextBlock Text="f" Grid.Column="5" TextAlignment="Center" Padding = "5"/>
+            <TextBlock Text="g" Grid.Column="6" TextAlignment="Center" Padding = "5"/>
+            <TextBlock Text="h" Grid.Column="7" TextAlignment="Center" Padding = "5"/>
+        </Grid>
+
         <!--#endregion-->
         
+        <!--#region Grid-->
+        <Grid Grid.Column="1" Grid.Row="1" x:Name="Grid"  MouseLeftButtonDown="Grid_MouseLeftButtonDown" Background="#FF028A0F">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+                <!--#region Row 1-->
+            <Border Grid.Column="0" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[0][0]}"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[0][1]}"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[0][2]}"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[0][3]}"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[0][4]}"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[0][5]}"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[0][6]}"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[0][7]}"/>
+            </Border>
+
+            <!--#endregion-->
+            <!--#region Row 2-->
+            <Border Grid.Column="0" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[1][0]}"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[1][1]}"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[1][2]}"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[1][3]}"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[1][4]}"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[1][5]}"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[1][6]}"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="1" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[1][7]}"/>
+            </Border>
+            <!--#endregion-->
+            <!--#region Row 3-->
+            <Border Grid.Column="0" Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[2][0]}"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[2][1]}"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[2][2]}"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[2][3]}"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[2][4]}"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[2][5]}"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[2][6]}"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="2" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[2][7]}"/>
+            </Border>
+            <!--#endregion-->
+            <!--#region Row 4-->
+            <Border Grid.Column="0" Grid.Row="3" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[3][0]}"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="3" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[3][1]}"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="3" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[3][2]}"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="3" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[3][3]}"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="3" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[3][4]}"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="3" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[3][5]}"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="3" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[3][6]}"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="3" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[3][7]}"/>
+            </Border>
+
+            <!--#endregion-->
+            <!--#region Row 5-->
+            <Border Grid.Column="0" Grid.Row="4" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[4][0]}"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="4" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[4][1]}"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="4" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[4][2]}"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="4" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[4][3]}"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="4" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[4][4]}"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="4" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[4][5]}"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="4" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[4][6]}"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="4" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[4][7]}"/>
+            </Border>
+
+            <!--#endregion-->
+            <!--#region Row 6-->
+            <Border Grid.Column="0" Grid.Row="5" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[5][0]}"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="5" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[5][1]}"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="5" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[5][2]}"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="5" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[5][3]}"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="5" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[5][4]}"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="5" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[5][5]}"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="5" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[5][6]}"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="5" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[5][7]}"/>
+            </Border>
+            <!--#endregion-->
+            <!--#region Row 7-->
+            <Border Grid.Column="0" Grid.Row="6" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[6][0]}"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="6" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[6][1]}"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="6" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[6][2]}"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="6" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[6][3]}"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="6" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[6][4]}"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="6" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[6][5]}"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="6" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[6][6]}"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="6" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[6][7]}"/>
+            </Border>
+            <!--#endregion-->
+            <!--#region Row 8-->
+            <Border Grid.Column="0" Grid.Row="7" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[7][0]}"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="7" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[7][1]}"/>
+            </Border>
+            <Border Grid.Column="2" Grid.Row="7" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[7][2]}"/>
+            </Border>
+            <Border Grid.Column="3" Grid.Row="7" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[7][3]}"/>
+            </Border>
+            <Border Grid.Column="4" Grid.Row="7" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[7][4]}"/>
+            </Border>
+            <Border Grid.Column="5" Grid.Row="7" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[7][5]}"/>
+            </Border>
+            <Border Grid.Column="6" Grid.Row="7" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[7][6]}"/>
+            </Border>
+            <Border Grid.Column="7" Grid.Row="7" BorderBrush="Black" BorderThickness="1">
+                <Ellipse Fill="{Binding GameGridColor[7][7]}"/>
+            </Border>
+            <!--#endregion-->
+
+            
+        </Grid>
         <!--#endregion-->
     </Grid>
 

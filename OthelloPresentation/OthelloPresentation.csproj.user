@@ -10,7 +10,7 @@
     <Compile Update="Dialogs\DrawnDialog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Dialogs\Window1.xaml.cs">
+    <Compile Update="GameGrid.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="GameWindow.xaml.cs">
@@ -27,7 +27,7 @@
     <Page Update="Dialogs\DrawnDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Dialogs\Window1.xaml">
+    <Page Update="GameGrid.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GameWindow.xaml">
